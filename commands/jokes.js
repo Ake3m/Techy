@@ -4,6 +4,6 @@ const {generateJoke}=require('../joke_generator.js');
 module.exports={
     data:new SlashCommandBuilder().setName('joke').setDescription('Replies with a joke'),
     async execute(interaction){
-        await interaction.reply(generateJoke);
+        await interaction.reply(generateJoke());
     },
 };
